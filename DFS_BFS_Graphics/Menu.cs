@@ -19,14 +19,12 @@ namespace DFS_BFS_Graphics
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SelectSearchAlgorithmForm gl = new SelectSearchAlgorithmForm();
-            gl.Show();
+            new SelectSearchAlgorithmForm().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SelectFindingOstovAlgoForm po = new SelectFindingOstovAlgoForm();
-            po.Show();
+            new SelectFindingOstovAlgoForm().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -36,7 +34,7 @@ namespace DFS_BFS_Graphics
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            new FloydWorshellSelector().Show();
         }
     }
 }

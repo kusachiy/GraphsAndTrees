@@ -46,32 +46,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BellmanAndDijkstraSelector.cs">
+    <Compile Include="Selectors\BellmanAndDijkstraSelector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BellmanAndDijkstraSelector.Designer.cs">
+    <Compile Include="Selectors\BellmanAndDijkstraSelector.Designer.cs">
       <DependentUpon>BellmanAndDijkstraSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bellman_Dijkstra_Worshell.cs" />
-    <Compile Include="BFS.cs" />
-    <Compile Include="DFS.cs" />
+    <Compile Include="ClassFolder\Bellman_Dijkstra_Worshell.cs" />
+    <Compile Include="ClassFolder\BFS.cs" />
+    <Compile Include="ClassFolder\DFS.cs" />
     <Compile Include="DFS_and_BFS.cs" />
-    <Compile Include="VisualizerFloyd.cs">
+    <Compile Include="Selectors\FloydWorshellSelector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisualizerFloyd.Designer.cs">
+    <Compile Include="Selectors\FloydWorshellSelector.Designer.cs">
+      <DependentUpon>FloydWorshellSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vizualizers\VisualizerFloyd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vizualizers\VisualizerFloyd.Designer.cs">
       <DependentUpon>VisualizerFloyd.cs</DependentUpon>
     </Compile>
-    <Compile Include="VizualizerSearches.cs">
+    <Compile Include="Vizualizers\VizualizerSearches.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VizualizerSearches.Designer.cs">
+    <Compile Include="Vizualizers\VizualizerSearches.Designer.cs">
       <DependentUpon>VizualizerSearches.cs</DependentUpon>
     </Compile>
-    <Compile Include="SelectSearchAlgorithmForm.cs">
+    <Compile Include="Selectors\SelectSearchAlgorithmForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SelectSearchAlgorithmForm.Designer.cs">
+    <Compile Include="Selectors\SelectSearchAlgorithmForm.Designer.cs">
       <DependentUpon>SelectSearchAlgorithmForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
@@ -80,46 +86,49 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MinamalSkeleton.cs" />
-    <Compile Include="SelectFindingOstovAlgoForm.cs">
+    <Compile Include="ClassFolder\MinamalSkeleton.cs" />
+    <Compile Include="Selectors\SelectFindingOstovAlgoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SelectFindingOstovAlgoForm.Designer.cs">
+    <Compile Include="Selectors\SelectFindingOstovAlgoForm.Designer.cs">
       <DependentUpon>SelectFindingOstovAlgoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VisualizerBelDij.cs">
+    <Compile Include="Vizualizers\VisualizerBelDij.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisualizerBelDij.Designer.cs">
+    <Compile Include="Vizualizers\VisualizerBelDij.Designer.cs">
       <DependentUpon>VisualizerBelDij.cs</DependentUpon>
     </Compile>
-    <Compile Include="VisualizerSkeleton.cs">
+    <Compile Include="Vizualizers\VisualizerSkeleton.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisualizerSkeleton.Designer.cs">
+    <Compile Include="Vizualizers\VisualizerSkeleton.Designer.cs">
       <DependentUpon>VisualizerSkeleton.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BellmanAndDijkstraSelector.resx">
+    <EmbeddedResource Include="Selectors\BellmanAndDijkstraSelector.resx">
       <DependentUpon>BellmanAndDijkstraSelector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VisualizerBelDij.resx">
+    <EmbeddedResource Include="Selectors\FloydWorshellSelector.resx">
+      <DependentUpon>FloydWorshellSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vizualizers\VisualizerBelDij.resx">
       <DependentUpon>VisualizerBelDij.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VisualizerFloyd.resx">
+    <EmbeddedResource Include="Vizualizers\VisualizerFloyd.resx">
       <DependentUpon>VisualizerFloyd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VizualizerSearches.resx">
+    <EmbeddedResource Include="Vizualizers\VizualizerSearches.resx">
       <DependentUpon>VizualizerSearches.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SelectSearchAlgorithmForm.resx">
+    <EmbeddedResource Include="Selectors\SelectSearchAlgorithmForm.resx">
       <DependentUpon>SelectSearchAlgorithmForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SelectFindingOstovAlgoForm.resx">
+    <EmbeddedResource Include="Selectors\SelectFindingOstovAlgoForm.resx">
       <DependentUpon>SelectFindingOstovAlgoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -131,7 +140,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="VisualizerSkeleton.resx">
+    <EmbeddedResource Include="Vizualizers\VisualizerSkeleton.resx">
       <DependentUpon>VisualizerSkeleton.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
