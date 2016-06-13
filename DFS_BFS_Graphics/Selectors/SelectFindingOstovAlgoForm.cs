@@ -14,6 +14,7 @@ namespace DFS_BFS_Graphics
     public partial class SelectFindingOstovAlgoForm : Form
     {
         int[,] matrix;
+        int[,] original;
         public SelectFindingOstovAlgoForm()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace DFS_BFS_Graphics
                     for (int j = 0; j < size; j++)
                         matrix[i, j] = int.Parse(temp[j]);
                 }
+                original = (int[,])matrix.Clone();
                 label.Text = "All good";
                 sReader.Close();
             }
@@ -40,13 +42,13 @@ namespace DFS_BFS_Graphics
 
         private void Prima_Button_Click(object sender, EventArgs e)
         {            
-            VisualizerSkeleton v = new VisualizerSkeleton(matrix,MinamalSkeleton.Prima(matrix));
+            VisualizerSkeleton v = new VisualizerSkeleton(original,MinamalSkeleton.Prima(matrix));
             v.Show(); 
         }
 
         private void Kruskala_Button_Click(object sender, EventArgs e)
         {
-            VisualizerSkeleton v = new VisualizerSkeleton(matrix,MinamalSkeleton.Kruskala(matrix));
+            VisualizerSkeleton v = new VisualizerSkeleton(original,MinamalSkeleton.Kruskala(matrix));
             v.Show();
         }
     }

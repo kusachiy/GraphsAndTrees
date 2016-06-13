@@ -52,9 +52,7 @@ namespace DFS_BFS_Graphics
         private void DFS_Button_Click(object sender, EventArgs e)
         {
             
-            new Drawing(matrix,DFS.Search).ShowDialog();            
-            
-            
+            new Drawing(matrix,DFS.Search).ShowDialog();                 
         }
     }
 }

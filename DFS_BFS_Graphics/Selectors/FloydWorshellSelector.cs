@@ -13,16 +13,17 @@ namespace DFS_BFS_Graphics
 {
     public partial class FloydWorshellSelector : Form
     {
+        int[,] original;
         int[,] matrix;
 
         public FloydWorshellSelector()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void Run_Button_Click(object sender, EventArgs e)
         {
-            new VisualizerFloyd(matrix,Bellman_Dijkstra_Worshell.FloydWorschell(matrix));
+            new VisualizerFloyd(original,Bellman_Dijkstra_Worshell.FloydWorschell(matrix)).Show();
         }
 
         private void selectFileButton_Click(object sender, EventArgs e)
@@ -39,6 +40,7 @@ namespace DFS_BFS_Graphics
                     for (int j = 0; j < size; j++)
                         matrix[i, j] = int.Parse(temp[j]);
                 }
+                original =(int[,])matrix.Clone();
                 label.Text = "All good";
                 sReader.Close();
             }
