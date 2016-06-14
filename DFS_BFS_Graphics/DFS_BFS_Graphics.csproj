@@ -55,7 +55,6 @@
     <Compile Include="ClassFolder\Bellman_Dijkstra_Worshell.cs" />
     <Compile Include="ClassFolder\BFS.cs" />
     <Compile Include="ClassFolder\DFS.cs" />
-    <Compile Include="DFS_and_BFS.cs" />
     <Compile Include="Selectors\FloydWorshellSelector.cs">
       <SubType>Form</SubType>
     </Compile>
