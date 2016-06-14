@@ -71,12 +71,12 @@ namespace DFS_BFS_Graphics
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void vizualizeButton_Click(object sender, EventArgs e)
         {
             Drawing();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void runButton_Click(object sender, EventArgs e)
         {
             string matrices = MatrixToString(matrix);
             for (int i = 0; i < matrix.GetLength(0); i++)

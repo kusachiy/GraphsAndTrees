@@ -76,7 +76,7 @@
             this.BFS_Button.TabIndex = 3;
             this.BFS_Button.Text = "BFS";
             this.BFS_Button.UseVisualStyleBackColor = true;
-            this.BFS_Button.Click += new System.EventHandler(this.button2_Click);
+            this.BFS_Button.Click += new System.EventHandler(this.BFS_Button_Click);
             // 
             // SelectSearchAlgorithmForm
             // 
@@ -89,7 +89,6 @@
             this.Controls.Add(this.selectFileButton);
             this.Name = "SelectSearchAlgorithmForm";
             this.Text = "SearchAlgorithms";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

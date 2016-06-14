@@ -40,16 +40,6 @@ namespace DFS_BFS_Graphics
             //g = pictureBox1.CreateGraphics();
         }
 
-        private void Drawing_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_LoadCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-
-        }
-
         void DrawLines()
         {
             for (int i = 0; i < countOfVertex; i++)
@@ -71,16 +61,12 @@ namespace DFS_BFS_Graphics
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void vizualizeButton_Click(object sender, EventArgs e)
         {
             matrix = mainMatrix;
             Drawing();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
         void Drawing()
         {
             g.Clear(Color.White);
@@ -91,7 +77,7 @@ namespace DFS_BFS_Graphics
             DrawLines();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void runButton_Click(object sender, EventArgs e)
         {
             matrix = ostov;
             Drawing();

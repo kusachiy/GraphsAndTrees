@@ -34,17 +34,12 @@ namespace DFS_BFS_Graphics
                     for (int j = 0; j < size; j++)
                         matrix[i, j] = int.Parse(temp[j]);
                 }
-                label.Text = "All good";
+                selectFileButton.Text = "graph loaded";
                 sReader.Close();
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void BFS_Button_Click(object sender, EventArgs e)
         {
             new Drawing(matrix, BFS.Search).ShowDialog();
         }

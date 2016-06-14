@@ -40,28 +40,12 @@ namespace DFS_BFS_Graphics
             //g = pictureBox1.CreateGraphics();
         }
 
-        private void Drawing_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_LoadCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            
-        }
-
         void DrawLines()
         {
             for (int i = 0; i < countOfVertex; i++)
-            {
                 for (int j = i+1; j < countOfVertex; j++)
-                {
                     if (matrix[i, j] > 0)
-                    {
                         DrawLine(Pens.Black,i, j);
-                    }
-                }
-            }
         }
         void DrawLine(Pen pen,int p1,int p2)
         {
@@ -72,13 +56,11 @@ namespace DFS_BFS_Graphics
         void DrawNumbers()
         {
             for (int i = 0; i < countOfVertex; i++)
-            {
                 g.DrawString(i.ToString(), SystemFonts.IconTitleFont, Brushes.White, vertices[i]);
-            }
         }
         
 
-        private void button1_Click(object sender, EventArgs e)
+        private void vizualizeButton_Click(object sender, EventArgs e)
         {
             g = pictureBox1.CreateGraphics();
             g.Clear(Color.White);
@@ -90,7 +72,7 @@ namespace DFS_BFS_Graphics
             DrawNumbers();
         }
 
-        private void SearchButt_Click(object sender, EventArgs e)
+        private void runButton_Click(object sender, EventArgs e)
         {
             int start=int.Parse(textBox1.Text), search=int.Parse(textBox2.Text);
             var list = sa(matrix, start, search);

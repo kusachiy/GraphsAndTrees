@@ -36,7 +36,7 @@ namespace DFS_BFS_Graphics
                     for (int j = 0; j < size; j++)
                         matrix[i, j] = int.Parse(temp[j]);
                 }
-                label.Text = "All good";
+                selectFileButton.Text = "graph loaded";
                 sReader.Close();
             }
         }

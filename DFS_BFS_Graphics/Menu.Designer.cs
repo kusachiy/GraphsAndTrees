@@ -28,61 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.searchesButton = new System.Windows.Forms.Button();
+            this.skeletonButton = new System.Windows.Forms.Button();
+            this.minamalPathButton = new System.Windows.Forms.Button();
+            this.minamalPathButton2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // searchesButton
             // 
-            this.button1.Location = new System.Drawing.Point(13, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Поиск в графе";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.searchesButton.Location = new System.Drawing.Point(13, 29);
+            this.searchesButton.Name = "searchesButton";
+            this.searchesButton.Size = new System.Drawing.Size(151, 35);
+            this.searchesButton.TabIndex = 0;
+            this.searchesButton.Text = "Поиск в графе";
+            this.searchesButton.UseVisualStyleBackColor = true;
+            this.searchesButton.Click += new System.EventHandler(this.searchesButton_Click);
             // 
-            // button2
+            // skeletonButton
             // 
-            this.button2.Location = new System.Drawing.Point(12, 70);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Минимальный остов";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.skeletonButton.Location = new System.Drawing.Point(12, 70);
+            this.skeletonButton.Name = "skeletonButton";
+            this.skeletonButton.Size = new System.Drawing.Size(151, 35);
+            this.skeletonButton.TabIndex = 1;
+            this.skeletonButton.Text = "Минимальный остов";
+            this.skeletonButton.UseVisualStyleBackColor = true;
+            this.skeletonButton.Click += new System.EventHandler(this.skeletonButton_Click);
             // 
-            // button3
+            // minamalPathButton
             // 
-            this.button3.Location = new System.Drawing.Point(13, 111);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 35);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Кратчайшие пути из одной вершины до остальных";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.minamalPathButton.Location = new System.Drawing.Point(13, 111);
+            this.minamalPathButton.Name = "minamalPathButton";
+            this.minamalPathButton.Size = new System.Drawing.Size(151, 35);
+            this.minamalPathButton.TabIndex = 2;
+            this.minamalPathButton.Text = "Кратчайшие пути из одной вершины до остальных";
+            this.minamalPathButton.UseVisualStyleBackColor = true;
+            this.minamalPathButton.Click += new System.EventHandler(this.minamalPathButton_Click);
             // 
-            // button4
+            // minamalPathButton2
             // 
-            this.button4.Location = new System.Drawing.Point(12, 152);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(151, 35);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Кратчайшие пути между всеми вершинами";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.minamalPathButton2.Location = new System.Drawing.Point(12, 152);
+            this.minamalPathButton2.Name = "minamalPathButton2";
+            this.minamalPathButton2.Size = new System.Drawing.Size(151, 35);
+            this.minamalPathButton2.TabIndex = 3;
+            this.minamalPathButton2.Text = "Кратчайшие пути между всеми вершинами";
+            this.minamalPathButton2.UseVisualStyleBackColor = true;
+            this.minamalPathButton2.Click += new System.EventHandler(this.minamalPathButton2_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 271);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(176, 200);
+            this.Controls.Add(this.minamalPathButton2);
+            this.Controls.Add(this.minamalPathButton);
+            this.Controls.Add(this.skeletonButton);
+            this.Controls.Add(this.searchesButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Menu";
             this.Text = "Menu";
             this.ResumeLayout(false);
@@ -91,9 +92,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button searchesButton;
+        private System.Windows.Forms.Button skeletonButton;
+        private System.Windows.Forms.Button minamalPathButton;
+        private System.Windows.Forms.Button minamalPathButton2;
     }
 }

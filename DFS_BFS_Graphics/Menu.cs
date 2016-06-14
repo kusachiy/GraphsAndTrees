@@ -17,22 +17,22 @@ namespace DFS_BFS_Graphics
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void searchesButton_Click(object sender, EventArgs e)
         {
             new SelectSearchAlgorithmForm().Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void skeletonButton_Click(object sender, EventArgs e)
         {
             new SelectFindingOstovAlgoForm().Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void minamalPathButton_Click(object sender, EventArgs e)
         {
             new BellmanAndDijkstraSelector().Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void minamalPathButton2_Click(object sender, EventArgs e)
         {
             new FloydWorshellSelector().Show();
         }

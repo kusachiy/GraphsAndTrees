@@ -41,7 +41,7 @@ namespace DFS_BFS_Graphics
                         matrix[i, j] = int.Parse(temp[j]);
                 }
                 original =(int[,])matrix.Clone();
-                label.Text = "All good";
+                selectFileButton.Text = "graph loaded";
                 sReader.Close();
             }
         }
